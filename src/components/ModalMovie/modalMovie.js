@@ -59,7 +59,7 @@ function ModalMovie(props) {
                     </Button>
                     <Button variant="primary" onClick={handleSaveChanges}>
                         Save Changes
-                    </Button>
+                    </Button>         
                 </Modal.Footer>
             </Modal>
         </>

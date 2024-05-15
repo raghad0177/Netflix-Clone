@@ -4,6 +4,7 @@ import Navbar from './components/Navbar/navbar.js'
 import Footer from './components/Footer/footer.js';
 import { Route, Routes } from 'react-router-dom';
 import FavList from './components/FavList/favList.js';
+
 function App() {
   return (
     <div style={{ backgroundColor: '#DC8B7A' }}>

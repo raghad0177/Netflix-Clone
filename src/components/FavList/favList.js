@@ -10,7 +10,7 @@ function FavList() {
     const [netflixList, setNetflixList] = useState([]);
     const [showAlert, setShowAlert] = useState(false);
     const inputRef = useRef(null);
-
+   
     useEffect(() => {
         const fetchNetflixList = async () => {
             try {
@@ -22,7 +22,7 @@ function FavList() {
             }
         };
 
-        fetchNetflixList();
+        fetchNetflixList();   
     }, []);
 
     const toggleShowMore = () => {

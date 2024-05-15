@@ -10,7 +10,7 @@ function FavList() {
     const [netflixList, setNetflixList] = useState([]);
     const [showAlert, setShowAlert] = useState(false);
     const inputRef = useRef(null);
-
+   
     useEffect(() => {
         const fetchNetflixList = async () => {
             try {
@@ -22,7 +22,7 @@ function FavList() {
             }
         };
 
-        fetchNetflixList();
+        fetchNetflixList();   
     }, []);
 
     const toggleShowMore = () => {
@@ -76,7 +76,7 @@ function FavList() {
                         <Card style={{ width: '400px', padding: '5px', backgroundColor: '#DA725C', height: cardHeight }}>
                             <div style={{ marginBottom: '2px', marginTop: '10px' }}>
                                 <center>
-                                    <Card.Title style={{ color: '#FFFFFF', fontSize: '25px', color: '#9F000F' }}>{props.name || props.title}</Card.Title>
+                                    <Card.Title style={{  fontSize: '25px', color: '#9F000F' }}>{props.name || props.title}</Card.Title>
                                 </center>
                             </div>
                             <Card.Img variant="top" src={props.poster_path} style={{ height: '250px', width: '350px', margin: '20px' }} />

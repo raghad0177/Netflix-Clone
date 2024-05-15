@@ -8,7 +8,7 @@ function Home() {
     useEffect(() => {
         const fetchNetflixMovies = async () => {
             try {
-                const response = await fetch(`http://localhost:3000/trending`);
+                const response = await fetch(`https://movies-library-l5nh.onrender.com/trending`);
                 const data = await response.json();
                 setNetflixMovies(data);
             } catch (error) {

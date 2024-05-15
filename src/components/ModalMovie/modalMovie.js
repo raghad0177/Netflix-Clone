@@ -20,7 +20,7 @@ function ModalMovie(props) {
         };
 
 
-        const basicUrl = 'http://localhost:3000/addMovie';
+        const basicUrl = 'https://movies-library-l5nh.onrender.com/addMovie';
         try {
             const response = await axios.post(basicUrl, data);
             console.log(response.data); // Log the response data

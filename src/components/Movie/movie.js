@@ -28,7 +28,7 @@ function Movie(props) {
 
                     <div style={{ marginBottom: '2px', marginTop: '10px' }}>
                         <center>
-                            <Card.Title style={{ color: '#FFFFFF', fontSize: '25px', color: '#9F000F' }}>  {props.name} </Card.Title>
+                            <Card.Title style={{  fontSize: '25px', color: '#9F000F' }}>  {props.name} </Card.Title>
                         </center>
                     </div>
                     <Card.Img variant="top" src={`https://image.tmdb.org/t/p/w500${props.imgPath}`} style={{ height: '250px', width: '350px', margin: '20px' }} />

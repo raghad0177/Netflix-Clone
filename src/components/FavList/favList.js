@@ -14,7 +14,7 @@ function FavList() {
     useEffect(() => {
         const fetchNetflixList = async () => {
             try {
-                const response = await fetch(`http://localhost:3000/getMovies`);
+                const response = await fetch(`https://movies-library-l5nh.onrender.com/getMovies`);
                 const data = await response.json();
                 setNetflixList(data);
             } catch (error) {
@@ -32,7 +32,7 @@ function FavList() {
 
     const deleteMovie = async (id) => {
         try {
-            await fetch(`http://localhost:3000/delete/${id}`, {
+            await fetch(`https://movies-library-l5nh.onrender.com/delete/${id}`, {
                 method: "DELETE",
             });
             setNetflixList(prevList => prevList.filter(movie => movie.id !== id));
@@ -49,7 +49,7 @@ function FavList() {
                 ...netflixList[updatedMovieIndex],
                 commints: updatedComment
             };
-            await fetch(`http://localhost:3000/edit/${id}`, {
+            await fetch(`https://movies-library-l5nh.onrender.com/edit/${id}`, {
                 method: "PUT",
                 headers: {
                     "Content-Type": "application/json"

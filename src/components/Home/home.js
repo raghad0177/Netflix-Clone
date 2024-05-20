@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import MovieList from '../MovieList/movieList.js'
 
+
 function Home() {
 
     const [netflixMovies, setNetflixMovies] = useState([]);
